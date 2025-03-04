@@ -80,3 +80,43 @@ class MyApp extends StatelessWidget {
               ),
 
               SizedBox(
+height: 40,
+              ),
+
+              Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Colors.purple, Colors.deepPurple],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  borderRadius: BorderRadius.circular(15.0),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black26,
+                      blurRadius: 8.0,
+                      offset: Offset(0, 3),
+                    ),
+                  ],
+                ),
+                margin: EdgeInsets.symmetric(horizontal: 16.0),
+                padding: EdgeInsets.all(20.0),
+                width: double.infinity,
+                child: Center(
+                  child: Text(
+                    'Just Give My Money',
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
